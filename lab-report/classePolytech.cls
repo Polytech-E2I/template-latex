@@ -39,7 +39,7 @@
 \newcommand{\motif}[1]{\renewcommand{\motif}{#1}}
 \newcommand{\titre}[1]{\renewcommand{\titre}{#1}}
 \newcommand{\enseignant}[1]{\renewcommand{\enseignant}{#1}}
-\newcommand{\eleves}[1]{\renewcommand{\eleves}{#1}}
+\newcommand{\etudiants}[1]{\renewcommand{\etudiants}{#1}}
 \newcommand{\tuteurpcp}[1]{\renewcommand{\tuteurpcp}{#1}}
 \newcommand{\fairemarges}{
 \makenomenclature
@@ -84,14 +84,14 @@
 
 	\begin{minipage}{0.5\textwidth} %Minipage pour faire deux colonnes
 		\begin{flushleft} \large %Envoyer à gauche
-		\emph{\textbf{Élève :}}\\ %Pour le titre au dessus des noms à gauche
-        \eleves\\ %Remplacer pour chacun
+		\emph{\textbf{Étudiant·e·s}}\\ %Pour le titre au dessus des noms à gauche
+        \etudiants\\ %Remplacer pour chacun
 		\end{flushleft}
 	\end{minipage}
 	~
 	\begin{minipage}{0.4\textwidth}
 		\begin{flushright} \large
-		\emph{\textbf{Enseignant}} \\
+		\emph{\textbf{Enseignant·e·s}} \\
 		 \enseignant \\
 		 %\vspace{0.5cm}
 		%\emph{\textbf{Tuteur PCP :}}\\
