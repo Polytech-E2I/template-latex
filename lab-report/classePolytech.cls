@@ -68,7 +68,7 @@
            {}%amount added to headsep
            {}%amount added to footskip
 
-\setlength{\wpYoffset}{-8cm}
+\setlength{\wpYoffset}{-6cm}
 \ThisCenterWallPaper{0.4}{logos/polytech-vertical.png}
 	\flushleft
 	\includegraphics[width=0.2\textwidth]{logos/grenoble-inp.png} %Insertion du logo
@@ -82,7 +82,7 @@
     \rule{\linewidth}{0.2 mm} \\[0.4 cm]
 	{\huge\bfseries \titre \par} \
     \rule{\linewidth}{0.2 mm} \\[1.5 cm]
-	\vspace{3cm}%Espace de 3cm
+	\vspace{1cm}%Espace de 3cm
 
 	\begin{minipage}{0.5\textwidth} %Minipage pour faire deux colonnes
 		\begin{flushleft} \large %Envoyer à gauche
