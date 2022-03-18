@@ -31,6 +31,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{amsfonts}
 \RequirePackage{lastpage}
+\RequirePackage{truncate}
 
 %-------------------- Informations sur le rapport ----------------------
 
@@ -49,9 +50,10 @@
 \lhead{\includegraphics[scale=0.12]{logos/grenoble-inp.png}} %Affichage de l'image au top de la page
 \chead{\includegraphics[scale=0.15]{logos/polytech-vertical.png}}
 \rhead{\includegraphics[scale=0.1]{logos/uga.png}}
+
+\lfoot{\textit{\truncate{15cm}{\titre}}}
+\cfoot{}
 \rfoot{\thepage/\pageref{LastPage}}
-\cfoot{\motif - \titre}
-\lfoot{\matiere}
 }
 
 \newcommand{\fairepagedegarde}{
