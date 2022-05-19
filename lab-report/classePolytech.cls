@@ -44,6 +44,8 @@
 
 \RequirePackage{setspace}
 
+\RequirePackage{biblatex}
+
 %-------------------- Informations sur le rapport ----------------------
 
 \newcommand{\departement}[1]{\renewcommand{\departement}{#1}}
