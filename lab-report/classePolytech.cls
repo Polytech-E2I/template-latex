@@ -48,14 +48,14 @@
 
 %-------------------- Informations sur le rapport ----------------------
 
-\newcommand{\departement}[1]{\renewcommand{\departement}{#1}}
-\newcommand{\matiere}[1]{\renewcommand{\matiere}{#1}}
-\newcommand{\motif}[1]{\renewcommand{\motif}{#1}}
-\newcommand{\titre}[1]{\renewcommand{\titre}{#1}}
-\newcommand{\enseignant}[1]{\renewcommand{\enseignant}{#1}}
-\newcommand{\etudiants}[1]{\renewcommand{\etudiants}{#1}}
-\newcommand{\tuteurpcp}[1]{\renewcommand{\tuteurpcp}{#1}}
-\newcommand{\fairemarges}{
+\newcommand{\department}[1]{\renewcommand{\department}{#1}}
+\newcommand{\topic}[1]{\renewcommand{\topic}{#1}}
+\newcommand{\motive}[1]{\renewcommand{\motive}{#1}}
+\newcommand{\headline}[1]{\renewcommand{\headline}{#1}}
+\newcommand{\teacher}[1]{\renewcommand{\teacher}{#1}}
+\newcommand{\student}[1]{\renewcommand{\student}{#1}}
+\newcommand{\tutor}[1]{\renewcommand{\tutor}{#1}}
+\newcommand{\makemargins}{
 \makenomenclature
 \pagestyle{fancy}
 \fancyheadoffset{1cm}
@@ -65,12 +65,12 @@
 \chead{\includegraphics[scale=0.15]{logos/polytech-vertical.png}}
 \rhead{\includegraphics[scale=0.1]{logos/uga.png}}
 
-\lfoot{\textit{\truncate{15cm}{\titre}}}
+\lfoot{\textit{\truncate{15cm}{\headline}}}
 \cfoot{}
 \rfoot{\thepage/\pageref{LastPage}}
 }
 
-\newcommand{\fairepagedegarde}{
+\newcommand{\makefrontpage}{
 
 \newgeometry{margin=2cm}
 \begin{titlepage}
@@ -84,27 +84,27 @@
 	\centering %Centraliser le contenu
 	{\scshape\LARGE Polytech Grenoble \par UGA - Grenoble INP \par} %Nom de l'université
 	\vspace{1.5cm}%Espace de 1,5cm
-	{\scshape\Large \departement \\ \matiere \\ \motif\par} %sous-titre
+	{\scshape\Large \department \\ \topic \\ \motive\par} %sous-titre
 	\vspace{1cm}%Espace de 1cm
     \rule{\linewidth}{0.2 mm} \\[0.4 cm]
-	{\huge\bfseries \textsc{\titre} \par} \
+	{\huge\bfseries \textsc{\headline} \par} \
     \rule{\linewidth}{0.2 mm} \\[1.5 cm]
 	\vspace{1cm}%Espace de 3cm
 
 	\begin{minipage}{0.5\textwidth} %Minipage pour faire deux colonnes
 		\begin{flushleft} \large %Envoyer à gauche
 		\emph{\textbf{Student(s)}}\\ %Pour le titre au dessus des noms à gauche
-        \etudiants\\ %Remplacer pour chacun
+        \student\\ %Remplacer pour chacun
 		\end{flushleft}
 	\end{minipage}
 	~
 	\begin{minipage}{0.4\textwidth}
 		\begin{flushright} \large
 		\emph{\textbf{Professor(s)}} \\
-		 \enseignant \\
+		 \teacher \\
 		 %\vspace{0.5cm}
 		%\emph{\textbf{Tuteur PCP :}}\\
-		 %\tuteurpcp
+		 %\tutor
 		\end{flushright}
 	\end{minipage}\\[1cm]
 
@@ -115,7 +115,7 @@
 \newgeometry{left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm}
 }
 
-\newcommand{\tabledematieres}{
+\newcommand{\contents}{
 {
 \hypersetup{linkcolor=black}
 \setcounter{tocdepth}{2}
@@ -124,14 +124,14 @@
 }
 }
 
-\newcommand{\tabledefigure}{
+\newcommand{\tableoffigures}{
 {
 \hypersetup{linkcolor=black}
 \listoffigures
 \newpage}
 }
 
-\newcommand{\tabledetableau}{
+\newcommand{\tableoftables}{
 {
 \hypersetup{linkcolor=black}
 \listoftables
