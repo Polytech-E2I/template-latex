@@ -45,6 +45,8 @@
 \RequirePackage{setspace}
 
 \RequirePackage{biblatex}
+\RequirePackage[acronym]{glossaries}
+\makeglossaries
 
 %-------------------- Informations sur le rapport ----------------------
 

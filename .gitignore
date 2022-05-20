@@ -292,3 +292,5 @@ TSWLatexianTemp*
 # Skip main.pdf that is generated on Github
 *.pdf
 *.sh
+
+*.ist
