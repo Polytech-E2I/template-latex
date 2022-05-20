@@ -63,7 +63,7 @@
 \setlength{\parindent}{1.5cm}
 \lhead{\includegraphics[scale=0.12]{logos/grenoble-inp.png}} %Affichage de l'image au top de la page
 \chead{\includegraphics[scale=0.15]{logos/polytech-vertical.png}}
-\rhead{\includegraphics[scale=0.1]{logos/uga.png}}
+\rhead{\includegraphics[scale=0.25]{logos/formasup-ida.png}}
 
 \lfoot{\textit{\truncate{15cm}{\headline}}}
 \cfoot{}
@@ -76,11 +76,12 @@
 \begin{titlepage}
 
 \setlength{\wpYoffset}{-7.5cm}
-\ThisCenterWallPaper{0.4}{logos/polytech-vertical.png}
-	\flushleft
+\ThisCenterWallPaper{0.3}{logos/front-pic.png}
 	\includegraphics[width=0.2\textwidth]{logos/grenoble-inp.png} %Insertion du logo
 	\hfill
-	\includegraphics[width=0.25\textwidth]{logos/uga.png}\par\vspace{1cm}
+	\includegraphics[width=0.25\textwidth]{logos/polytech-vertical.png} %Insertion du logo
+	\hfill
+	\includegraphics[width=0.2\textwidth]{logos/formasup-ida_big.png}\par\vspace{1cm}
 	\centering %Centraliser le contenu
 	{\scshape\LARGE Polytech Grenoble \par UGA - Grenoble INP \par} %Nom de l'université
 	\vspace{1.5cm}%Espace de 1,5cm
