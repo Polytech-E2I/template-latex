@@ -47,6 +47,7 @@
 \RequirePackage{biblatex}
 \RequirePackage[acronym]{glossaries}
 \makeglossaries
+\RequirePackage{nextpage}
 
 %-------------------- Informations sur le rapport ----------------------
 
