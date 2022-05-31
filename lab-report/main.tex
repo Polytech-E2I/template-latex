@@ -1,48 +1,37 @@
-\documentclass{classePolytech}
-\usepackage{lipsum}
+\documentclass{PolytechGrenoble}
 
-\title{ Template Polytech } %Titre du fichier
+\title{Test document}
+\author{Me !}
+\date{\today}
 
 \addbibresource{template.bib}
 
+
 \begin{document}
+\pagenumbering{roman}
+\input{sections/glossary.tex}
 
-%----------- Informations du rapport ---------
-
-\headline{Titre du rapport} %Titre du fichier .pdf
-\department{Électronique et Informatique Industrielle}
-\topic{Matière}
-\motive{TP/Stage }
-
-\teacher{Prénom \textsc{Nom}} %Nom de l'enseignant
-%\tutor{}
-\student{Prénom \textsc{Nom}} %Nom des élèves
-
-%----------- Initialisation -------------------
-
-\makefrontpage %Créer la page de garde
-\makemargins %Afficher les marges
+\maketitle
 
 \input{sections/acknowledgments.tex}
 
-\input{sections/glossary.tex}
-\printglossaries
+\printacronyms
 
-\contents %Créer la table de matières
-\tableoffigures
-\tableoftables
+\tableofcontents
 
-%------------ Corps du rapport ----------------
+\pagenumbering{arabic}
 
-\input{sections/introduction.tex}
+\input{sections/chapter01.tex}
+%\input{sections/chapter02.tex}
+%\input{sections/chapter03.tex}
 
-\input{sections/section01.tex}
-\input{sections/section02.tex}
+%\appendix
 
-\input{sections/conclusion.tex}
+%\input{sections/appendix01.tex}
 
-\input{sections/bibliography.tex}
+%\input{sections/bibliography.tex}
+%\printglossary
 
-\input{sections/backcover.tex}
+%\input{sections/backcover.tex}
 
 \end{document}
