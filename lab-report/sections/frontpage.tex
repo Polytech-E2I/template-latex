@@ -1,0 +1,73 @@
+\newgeometry{margin=2cm}
+
+\begin{titlepage}
+
+    % Wallpaper offset
+    \setlength{\wpYoffset}{-8.5cm}
+
+    % Company logo
+    \ThisCenterWallPaper{0.7}{logos/arturia2.png}
+
+    % School logos
+    \includegraphics[width=0.25\textwidth]{logos/grenoble-inp.png}
+    \hfill
+    \includegraphics[width=0.25\textwidth]{logos/polytech-vertical.png}
+    \hfill
+    \includegraphics[width=0.2\textwidth]{logos/formasup-ida_big.png}\par\vspace{1cm}
+
+    \centering
+
+    % School or university name
+    {
+        \scshape\LARGE \school \par \university \par
+    }
+
+    \vspace{1.5cm}
+
+    % Department name
+    {
+        \scshape\Large \department \\ \univyear \\ \motive\par
+    }
+
+    \vspace{1cm}
+
+    \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+
+    % Titre
+    {
+        \huge\bfseries \textsc{\MyTitle} \par
+    } \
+    \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+
+    % Columns
+    \begin{minipage}{0.5\textwidth}
+        \begin{flushleft}
+            \large
+            \emph{\textbf{Student(s)}}\\
+            \student\\
+        \end{flushleft}
+    \end{minipage}
+    ~
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushright}
+            \large
+            \emph{\textbf{Professor(s)}} \\
+            \teacher \\
+
+            \vspace{0.5cm}
+
+            \emph{\textbf{Tutor(s)}}\\
+            \tutor
+        \end{flushright}
+    \end{minipage}\\[1cm]
+
+    \vfill
+
+    % Date
+    {
+        \large \today\par
+    }
+
+\end{titlepage}
+
+\restoregeometry

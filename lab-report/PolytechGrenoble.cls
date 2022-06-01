@@ -81,9 +81,36 @@
 \RequirePackage[acronym]{glossaries-extra}
 \makeglossaries
 
+% For accessing title, author, etc.
+\RequirePackage{authoraftertitle}
+
+% For the front page
+\RequirePackage{wallpaper}
+\RequirePackage{setspace}
+
 % For debug purposes
 \RequirePackage{lipsum}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ENVIRONMENT VARIABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\school}[1]
+    {\renewcommand{\school}{#1}}
+\newcommand{\university}[1]
+    {\renewcommand{\university}{#1}}
+\newcommand{\department}[1]
+    {\renewcommand{\department}{#1}}
+\newcommand{\univyear}[1]
+    {\renewcommand{\univyear}{#1}}
+\newcommand{\motive}[1]
+    {\renewcommand{\motive}{#1}}
+\newcommand{\teacher}[1]
+    {\renewcommand{\teacher}{#1}}
+\newcommand{\tutor}[1]
+    {\renewcommand{\tutor}{#1}}
+\newcommand{\student}[1]
+    {\renewcommand{\student}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% CUSTOM COMMANDS
