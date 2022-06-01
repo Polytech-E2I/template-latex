@@ -2,6 +2,10 @@
 
 % Encoding
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+
+% Language support
+\RequirePackage[english, french]{babel}
 
 % Better picture handling
 \RequirePackage{graphicx}
