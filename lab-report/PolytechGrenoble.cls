@@ -1,3 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{PolytechGrenoble}[2022]
+
+\DeclareOption{english}{
+    \PassOptionsToClass{\CurrentOption}{scrreport}
+    \PassOptionsToPackage{\CurrentOption}{babel}
+}
+\DeclareOption{french}{
+    \PassOptionsToClass{\CurrentOption}{scrreport}
+    \PassOptionsToPackage{\CurrentOption}{babel}
+}
+
+\ProcessOptions\relax
+
+% Base class
 \LoadClass[12pt]{scrreport}
 
 % Encoding
@@ -5,7 +20,7 @@
 \RequirePackage[T1]{fontenc}
 
 % Language support
-\RequirePackage[english, french]{babel}
+\RequirePackage{babel}
 
 % Better picture handling
 \RequirePackage{graphicx}
