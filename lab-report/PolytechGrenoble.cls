@@ -1,4 +1,4 @@
-\LoadClass[12pt]{report}
+\LoadClass[12pt]{scrreport}
 
 % Encoding
 \RequirePackage[utf8]{inputenc}
@@ -46,11 +46,12 @@
 \fancyhead{} % Clear existing headers
 \fancyhead[LE,RO]{\includegraphics[height=30pt]{logos/arturia.png}}
 \fancyhead[RE,LO]{\includegraphics[height=30pt]{logos/polytech-vertical.png}}%\vspace{0.1pt}}
-\fancyhead[C]{Fancy title - Chapter \thechapter}
+\fancyhead[C]{\MyTitle}
 
 % Footer definition
 \fancyfoot{} % Clear existing footers
 \fancyfoot[LE,RO]{\thepage/\pageref{LastPage}}
+\fancyfoot[C]{\thechapter~-~\nameref{chp:\thechapter}}
 
 % Allow URLs to be cut
 \RequirePackage[hyphens]{url}
@@ -87,6 +88,9 @@
 % For the front page
 \RequirePackage{wallpaper}
 \RequirePackage{setspace}
+
+% For better-looking chapter titles
+\addtokomafont{disposition}{\rmfamily}
 
 % For debug purposes
 \RequirePackage{lipsum}
