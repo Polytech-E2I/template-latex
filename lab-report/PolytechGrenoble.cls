@@ -11,7 +11,7 @@
 
 \RequirePackage[
     % Uncomment to troubleshoot page layout issues
-     showframe,
+    %showframe,
     % Paper format
     a4paper,
     % Extend inner margins for book bindings
@@ -30,7 +30,7 @@
 % Allows to reference the last page of the document
 \RequirePackage{lastpage}
 % Allows to choose odd or even pages
-%\RequirePackage{nextpage}
+\RequirePackage{nextpage}
 
 % Allows to define fancy headers and footers
 \RequirePackage{fancyhdr}
@@ -47,6 +47,9 @@
 % Footer definition
 \fancyfoot{} % Clear existing footers
 \fancyfoot[LE,RO]{\thepage/\pageref{LastPage}}
+
+% Allow URLs to be cut
+\RequirePackage[hyphens]{url}
 
 % Link formatting
 \RequirePackage{hyperref}
