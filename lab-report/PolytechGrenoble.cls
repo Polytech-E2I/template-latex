@@ -74,7 +74,10 @@
 % Indent first paragraph
 \RequirePackage{indentfirst}
 
+% Bibliography
 \RequirePackage{biblatex}
+
+% Abbreviations and glossaries
 \RequirePackage[acronym]{glossaries-extra}
 \makeglossaries
 
