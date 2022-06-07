@@ -123,6 +123,18 @@
 \DeclareTranslation{English}{pg-merci}{Acknowledgments}
 \DeclareTranslation{French}{pg-merci}{Remerciements}
 
+\DeclareTranslationFallback{pg-professor}{Professor}
+\DeclareTranslation{English}{pg-professor}{Professor}
+\DeclareTranslation{French}{pg-professor}{Professeur}
+
+\DeclareTranslationFallback{pg-tutor}{Tutor}
+\DeclareTranslation{English}{pg-tutor}{Tutor}
+\DeclareTranslation{French}{pg-tutor}{Tuteur}
+
+\DeclareTranslationFallback{pg-student}{Student}
+\DeclareTranslation{English}{pg-student}{Student}
+\DeclareTranslation{French}{pg-student}{Étudiant}
+
 \appto\captionsenglish {
     \renewcommand*{\abbreviationsname}{List of Abbreviations}
 }
