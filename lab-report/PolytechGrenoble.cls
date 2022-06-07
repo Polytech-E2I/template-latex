@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{PolytechGrenoble}[2022]
 
+% Seamlessly swiych between english and french thanks to this option
+% Usage : \documentclass[english|french]{PolytechGrenoble}
 \DeclareOption{english}{
     \PassOptionsToClass{\CurrentOption}{scrreport}
     \PassOptionsToPackage{\CurrentOption}{babel}
