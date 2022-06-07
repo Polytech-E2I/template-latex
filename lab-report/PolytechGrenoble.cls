@@ -112,6 +112,10 @@
 % For better-looking chapter titles
 \addtokomafont{disposition}{\rmfamily}
 
+% Add spacing for itemize
+\RequirePackage{enumitem}
+\setlist[itemize]{topsep=12pt}
+
 % For debug purposes
 \RequirePackage{lipsum}
 
@@ -134,6 +138,10 @@
 \DeclareTranslationFallback{pg-student}{Student}
 \DeclareTranslation{English}{pg-student}{Student}
 \DeclareTranslation{French}{pg-student}{Étudiant}
+
+\DeclareTranslationFallback{pg-definition}{Definition}
+\DeclareTranslation{English}{pg-definition}{Definition}
+\DeclareTranslation{French}{pg-definition}{Définition}
 
 \appto\captionsenglish {
     \renewcommand*{\abbreviationsname}{List of Abbreviations}
@@ -221,7 +229,7 @@
         name={#2},
         description={#3},
         first={#3 (#2) \glsadd{#1_g}},
-        see=[Glossary:]{#1_g}
+        see=[\GetTranslation{pg-definition}:]{#1_g}
     }
 }
 
@@ -259,7 +267,7 @@
         name={#2},
         text={\lowercase{#2}},
         description={},
-        see=[Glossary:]{#3}
+        see=[\GetTranslation{pg-definition}:]{#3}
     }
 }
 
@@ -291,7 +299,7 @@
         name={#2},
         description={#3},
         first={#3 (#2)},
-        see=[Glossary:]{#4_g}
+        see=[\GetTranslation{pg-definition}:]{#4_g}
     }
 }
 
