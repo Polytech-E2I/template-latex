@@ -282,3 +282,8 @@
         see=[Glossary:]{#4_g}
     }
 }
+
+\newcommand{\labeledchapter}[1]{
+    \chapter{#1}
+    \label{chp:\thechapter}
+}
