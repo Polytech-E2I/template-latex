@@ -294,3 +294,8 @@ TSWLatexianTemp*
 *.sh
 
 *.ist
+
+# glossaries and glossaries-extra files
+*.gls*
+*.glo*
+*.glg*

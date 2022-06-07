@@ -149,6 +149,9 @@
         "**/.DS_Store": true,
         "**/*.pdf": true,
         "**/*.sh": true,
-        "**/*.ist": true
+        "**/*.ist": true,
+        "**/*.gls*": true,
+        "**/*.glo*": true,
+        "**/*.glg*": true
     }
 }

@@ -22,6 +22,9 @@
 % Language support
 \RequirePackage{babel}
 
+% Custom autotranslated words
+\RequirePackage{translations}
+
 % Better picture handling
 \RequirePackage{graphicx}
 
@@ -94,7 +97,7 @@
 \RequirePackage{biblatex}
 
 % Abbreviations and glossaries
-\RequirePackage[acronym]{glossaries-extra}
+\RequirePackage[abbreviations]{glossaries-extra}
 \makeglossaries
 
 % For accessing title, author, etc.
@@ -109,6 +112,22 @@
 
 % For debug purposes
 \RequirePackage{lipsum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CUSTOM TRANSLATED WORDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareTranslationFallback{pg-merci}{Acknowledgments}
+\DeclareTranslation{English}{pg-merci}{Acknowledgments}
+\DeclareTranslation{French}{pg-merci}{Remerciements}
+
+\appto\captionsenglish {
+    \renewcommand*{\abbreviationsname}{List of Abbreviations}
+}
+\appto\captionsfrench {
+    \renewcommand*{\abbreviationsname}{Liste des Abréviations}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% ENVIRONMENT VARIABLES
@@ -184,7 +203,7 @@
         description={\emph{(#3)} #4}
     }
     \newglossaryentry{#1}{
-        type=\acronymtype,
+        type=abbreviations,
         name={#2},
         description={#3},
         first={#3 (#2) \glsadd{#1_g}},
@@ -198,7 +217,7 @@
 % #3 : Expanded acronym
 \newcommand{\newacrnodef}[3]{
     \newglossaryentry{#1}{
-        type=\acronymtype,
+        type=abbreviations,
         name={#2},
         description={#3},
         first={#3 (#2)}
@@ -254,7 +273,7 @@
     \newfrenchacrdef{#4}{#5}{#6}{#7}
 
     \newglossaryentry{#1}{
-        type=\acronymtype,
+        type=abbreviations,
         name={#2},
         description={#3},
         first={#3 (#2)},
